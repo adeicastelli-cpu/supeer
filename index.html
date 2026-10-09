@@ -1,0 +1,101 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Súper</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fffafa;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .mensaje {
+            width: 300px;
+            background-color: #fce4ec;
+            padding: 40px 30px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .mensaje h1 {
+            color: #b05279;
+            font-size: 28px;
+        }
+
+        .mensaje p {
+            color: #805466;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .contenido {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .contenido h2 {
+            color: #b05279;
+            font-size: 32px;
+        }
+
+        .contenido p {
+            color: #805466;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                flex-direction: column;
+            }
+
+            .mensaje {
+                width: 100%;
+                padding: 25px;
+            }
+
+            .contenido {
+                min-height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside class="mensaje">
+        <h1>¡Hola!</h1>
+
+        <p>
+            Acá podés hacer tu lista para el súper.
+        </p>
+
+        <p>
+            Para verla, solo hacé clic derecho y andá a
+            <strong>Inspeccionar</strong>. Después entrá en la pestaña
+            <strong>Console</strong>.
+        </p>
+    </aside>
+
+    <main class="contenido">
+        <div>
+            <h2>Mi lista de súper</h2>
+            <p>¡Organizá tus compras de manera sencilla!</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
